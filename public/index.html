@@ -8,11 +8,52 @@
 </head>
 <body>
     <nav>
-        <div class="center">
-            <h2>Suki <span> yeah </span></h2>
+        <div class="content">
+            <div class="left">
+                <h2>Suki <span> yeah </span></h2>
+            </div>
+            <div class="right">
+                <div class="btn nav-btn">
+                    <button class="yellow" id="cart">ตระกร้า</button>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
+        <div class="popup-cart" id="popup-cart"">
+            <div class="cart">
+                <header>
+                    <h2>ตระกร้าสินค้า</h2>
+                <div class="close-btn">
+                    <button id="close-btn">X</button>
+                </div>
+                </header>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>รายการอาหาร</td>
+                            <td>จำนวน</td>
+                            <td>ราคา</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ข้าวขาหมู</td>
+                            <td>2</td>
+                            <td>80</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="bottom">
+                    <div class="total-price">
+                        <h3>ราคารวม: <span>80</span> บาท</h3>
+                    </div>
+                    <div class="btn">
+                        <button>สั่งอาหาร</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content">
             <h2>เลือกสั่งอาหาร</h2>
             <div class="menu-list">
@@ -235,5 +276,6 @@
             </div>
         </div>
     </main>
+    <script src="../public/asset/script/cart.js"></script>
 </body>
 </html>
